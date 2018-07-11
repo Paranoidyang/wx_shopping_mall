@@ -1,2 +1,73 @@
 <!--pages/member/member.wxml-->
-<text>pages/member/member.wxml</text>
+<view class="member-container">
+  <view class="header-info">
+    <!--背景图片  -->
+    <image class="bg-wrapper" src='../../images/member_bg.png'></image>
+    <!--如果只是展示头像、昵称，可以使用<open-data/>组件  -->      
+    <open-data class="avatar" type="userAvatarUrl"></open-data>
+    <open-data class="nickname" type="userNickName"></open-data> 
+    <!--格言  -->
+    <view class="motto">Ta很懒，还没留下什么~</view>
+  </view>
+
+  <!--我的订单  -->
+  <view class="my-order">
+    <view class="left">
+      <image class="icon-order" src="../../images/order.png"></image>
+      <text>我的订单</text>
+    </view>
+    <image class="icon-arrow" src="../../images/right_arrow.png"></image>
+  </view>
+  <!--订单状态  -->
+  <view class="order-status">
+    <view class="item">
+      <image class="icon-status" src="../../images/icon_not_pay.png"></image>
+      <text>待付款</text>
+    </view>
+    <view class="item">
+      <image class="icon-status" src="../../images/icon_not_deliver.png"></image>
+      <text>待发货</text>
+    </view>
+    <view class="item">
+      <image class="icon-status" src="../../images/icon_not_receive.png"></image>
+      <text>待收货</text>
+    </view>
+    <view class="item">
+      <image class="icon-status" src="../../images/icon_not_comment.png"></image>
+      <text>待评价</text>
+    </view>
+  </view>
+  <!--用户信息  -->
+  <view class="user-info">
+    <view class="info-item">
+      <image class="icon-info" src="../../images/money.png"></image>
+      <text class="my-balance">我的余额</text>
+      <text class="money">0元</text>
+    </view>
+    <view class="info-item">
+      <image class="icon-info" src="../../images/bargain.png"></image>
+      <text class="my-balance">我的砍价</text>
+    </view>
+    <view class="info-item">
+      <image class="icon-info" src="../../images/coupon.png"></image>
+      <text class="my-balance">我的礼券</text>
+    </view>
+  </view>
+  <view class="user-info">
+    <view class="info-item">
+      <image class="icon-info" src="../../images/heart.png"></image>
+      <text class="my-balance">我的收藏</text>
+    </view>
+    <view class="info-item">
+      <image class="icon-info" src="../../images/address.png"></image>
+      <text class="my-balance">我的地址</text>
+    </view>
+    <view class="info-item">
+      <image class="icon-info" src="../../images/customer_service.png"></image>
+      <text class="my-balance">联系客服</text>
+    </view>
+  </view>
+ 
+
+  
+</view>

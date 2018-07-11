@@ -1,30 +1,37 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/collect/collect",
     "pages/member/member",
-    "pages/logs/logs"
+    "pages/index/index",
+    "pages/category/category",
+    "pages/cart/cart"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#FA5523",
+    "navigationBarTitleText": "IT技术头条",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "custom"
   },
   "tabBar": {
     "selectedColor": "#ed3f14",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "头条",
-        "iconPath": "images/home.png",
-        "selectedIconPath": "images/home_select.png"
+        "text": "商城",
+        "iconPath": "images/shopping_mall.png",
+        "selectedIconPath": "images/shopping_mall_select.png"
       },
       {
-        "pagePath": "pages/collect/collect",
-        "text": "收藏",
-        "iconPath": "images/collect.png",
-        "selectedIconPath": "images/collect_select.png"
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "images/category.png",
+        "selectedIconPath": "images/category_select.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "images/cart.png",
+        "selectedIconPath": "images/cart_select.png"
       },
       {
         "pagePath": "pages/member/member",

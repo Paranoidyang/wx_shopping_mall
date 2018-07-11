@@ -1,1 +1,107 @@
 /* pages/member/member.wxss */
+.member-container {
+  font-size: 14px;
+}
+.header-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bg-wrapper {
+  height: 400rpx;
+  width: 100%;
+}
+.avatar {
+  position: absolute;
+  left: 30rpx;
+  top: 100rpx;
+  overflow: hidden;
+  width: 160rpx;
+  height: 160rpx;
+  margin-top: 50rpx;
+  margin-bottom: 20rpx;
+  border-radius: 50%;
+}
+.nickname {
+  position: absolute;
+  left: 210rpx;
+  top: 170rpx;
+  color: #fff;
+}
+.motto {
+  position: absolute;
+  left: 210rpx;
+  top: 240rpx;
+  font-size: 12px;
+  color: #fff;
+}
+.my-order {
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  border-bottom: 1rpx solid #f8f8f8;
+  color: #515151;
+  padding: 0 20rpx;
+  background: #fff;
+}
+.left {
+  flex: 1;
+   display: flex;
+  align-items: center; 
+}
+.icon-order {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 10rpx;
+}
+.icon-arrow {
+  width: 50rpx;
+  height: 50rpx;
+}
+.order-status {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  margin-bottom: 20rpx;
+  color: #707070;
+}
+.order-status .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  padding: 20rpx 0;
+}
+.icon-status {
+  width: 60rpx;
+  height: 60rpx;
+  margin-bottom: 5rpx;
+}
+.user-info {
+  display: flex;
+  font-size: 12px;
+  color: #515151;
+  background: #fff;
+}
+.user-info .info-item {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  height: 160rpx;
+  padding: 40rpx 0 30rpx 0;
+  border-right: 1rpx solid #f8f8f8;
+  border-bottom: 1rpx solid #f8f8f8;
+}
+.money {
+  font-size: 10px;
+  color: #999;
+  margin-top: 5rpx;
+}
+.icon-info {
+  width: 60rpx;
+  height: 60rpx;
+  margin-bottom: 30rpx;
+}
+

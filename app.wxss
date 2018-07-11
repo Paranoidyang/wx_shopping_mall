@@ -8,3 +8,7 @@
   padding: 0 20rpx;
   box-sizing: border-box;
 } 
+/*设置全局背景色  */
+page {
+   background: #f8f8f8; 
+}
