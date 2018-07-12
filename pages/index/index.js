@@ -1,54 +1,45 @@
 //index.js
-//获取应用实例
-const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
-  },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
-  onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
+    slides: [
+      "https://img1.360buyimg.com/da/s750x366_jfs/t24163/29/833026140/92109/1a7ce0b9/5b444e17Na4a33488.jpg!cr_1125x549_0_72.dpg",
+      "http://img.dmall.com/mIndex/201612/f8d1c169-1229-4121-8b39-b997d4cef239_750H",
+      "http://img.dmall.com/mIndex/201611/8412c37b-754b-4e1e-8e2c-cb8653cd4d0b_750H"
+    ],
+    bargainList: [
+      {
+        title: "联想(Lenovo)小新潮7000 14英寸轻薄笔记本电脑(英特尔八代酷睿I5-8250U 8G 2T+128G R535 office2016)银",
+        img: "//img13.360buyimg.com/n1/s450x450_jfs/t24586/261/677406755/248143/9643c7f3/5b3c3822Nea8f73e4.jpg",
+        desc: "英特尔八代酷睿",
+        basePrice: "3999",
+        originalPrice: "48888",
+        limit: "18"
+      },
+      {
+        title: "印尼进口 Nabati 丽芝士（Richeese）休闲零食 奶酪味 威化饼干 460g/盒 早餐下午茶",
+        img: "//img13.360buyimg.com/n1/jfs/t17941/226/2669737138/420972/35402273/5b062750N2e8adbff.jpg",
+        desc: "好吃不贵，休闲零食 奶酪味",
+        basePrice: "3999",
+        originalPrice: "48888",
+        limit: "18"
+      },
+      {
+        title: "风靡ins的伦敦腕",
+        img: "//img13.360buyimg.com/n1/jfs/t20062/238/2403877143/153179/a734465b/5b46bb72Nab9a6ea7.jpg",
+        desc: "英特尔八代酷睿男士手表",
+        basePrice: "3999",
+        originalPrice: "48888",
+        limit: "18"
+      },
+      {
+        title: "京觅 新疆库尔勒香梨 一级中果 总重约2kg 新鲜水果",
+        img: "//img12.360buyimg.com/mobilecms/s500x500_jfs/t17515/256/1947534381/244203/f54cd223/5adef415Nf7a0a895.jpg",
+        desc: "来自新疆塔克拉玛干沙漠的原汁原味",
+        basePrice: "3999",
+        originalPrice: "48888",
+        limit: "18"
       }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
-    }
-  },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+    ]
   }
 })

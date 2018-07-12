@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/category/category",    
-    "pages/member/member",
     "pages/index/index",
+    "pages/category/category",
+    "pages/member/member",
     "pages/cart/cart"
   ],
   "window": {

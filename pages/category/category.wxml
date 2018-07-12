@@ -1,12 +1,11 @@
 <!--pages/collect/collect.wxml-->
 <!--搜索栏 -->
 <view class="search-wrapper">
-  <input class="search-input" type="text" placeholder='请输入搜索关键词'></input>
-  <image class="icon-search" src="../../images/search.png"></image>
+  <input class="search-input" type="text" placeholder='请输入搜索关键词'> </input>
+  <image class="icon-search" src="../../images/search.png"> </image>
 </view>
 
 <!--分类tab切换  -->
-
 <view class="category-wrapper">
   <!--分类  -->
   <view class="sidebar">
@@ -15,7 +14,7 @@
   <!--结果列表  -->
   <view class="result-wrapper">
     <view class="goods-item" wx:for="{{goodsList}}" wx:key="{{item.id}}">
-      <image class="goods-image" src="{{item.image}}"></image>
+      <image class="goods-image" src="{{item.image}}"> </image>
       <view class="goods-info">
         <text class="title">{{item.title}}</text>
         <view class="price-wrapper">

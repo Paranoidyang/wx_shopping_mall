@@ -41,15 +41,15 @@ Page({
       },
       {
         id: 9,
-        name: '性生活'
+        name: '八度空间'
       },
       {
         id: 10,
-        name: '日本黄片'
+        name: '开不了口'
       },
       {
         id: 11,
-        name: '香港三级'
+        name: '等你下课'
       },
       {
         id: 12,
@@ -65,7 +65,7 @@ Page({
       },
       {
         id: 15,
-        name: '吃喝拉撒'
+        name: '以父之名'
       },
       {
         id: 16,
@@ -73,7 +73,7 @@ Page({
       },
       {
         id: 17,
-        name: '枪支弹药'
+        name: '七里香'
       }
     ],
     goodsList: [
@@ -138,70 +138,18 @@ Page({
         price: 8.80
       }
     ]
-  },
+  },    
   /**
    * 选择商品类型
    */ 
   categoryClick: function(event) {
     this.setData({
-      select: event.target.id -1
+      select: event.target.id - 1
+    })
+    // toast提示
+    wx.showToast({
+      title: event.target.id,
     })
     // 更新接口
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
   }
 })

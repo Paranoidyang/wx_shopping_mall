@@ -1,13 +1,59 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+  <!--轮播图-->
+  <swiper class="swiper-wrapper" autoplay="true" circular="true" indicator-dots="true" indicator-color="#fff" indicator-active-color="#FFA042">
+      <swiper-item class="swiper-item" wx:for="{{slides}}" wx:key="*this">
+        <image class="slider-image" src="{{item}}" mode="widthFix"></image>
+      </swiper-item>
+  </swiper>
+  <!--导航按钮-->
+  <view class="nav-btn-list">
+    <view class="btn-item">
+      <image src="../../images/sign.png"></image>
+      <text>签到</text>
+    </view>
+    <view class="btn-item">
+      <image src="../../images/coupon_home.png"></image>
+      <text>礼券</text>
+    </view>
+    <view class="btn-item">
+      <image src="../../images/bargain.png"></image>
+      <text>砍价</text>
+    </view>
+    <view class="btn-item">
+      <image src="../../images/column.png"></image>
+      <text>专栏</text>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <!--全民砍价-->
+  <view class="bargain-wrapper">
+    <view class="bargain-header">
+      <text>全民砍价</text>
+      <image src="../../images/right_arrow_circle.png" class="icon-right"></image>
+    </view>
+    <view class="bargain-item" wx:for="{{bargainList}}">
+      <image class="bargain-img" src="{{item.img}}"></image>
+      <view class="bargain-info">
+        <view class="info-header">
+          <text class="title">{{item.title}}</text>
+          <text class="desc">{{item.desc}}</text>
+        </view>
+        <view class="info-price">
+          <view class="base-price">
+            <text class="money">￥{{item.basePrice}}</text>
+            <text>底价</text>
+          </view>
+          <view class="original-price">
+            <text>￥{{item.originalPrice}}</text>
+            <text>原价</text>
+          </view>
+          <view class="limit">
+            <text>￥{{item.limit}}</text>
+            <text>限量</text>
+          </view>
+        </view>
+
+      </view>
+    </view>
   </view>
 </view>

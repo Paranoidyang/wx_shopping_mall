@@ -49,7 +49,7 @@
       <text class="my-balance">我的砍价</text>
     </view>
     <view class="info-item">
-      <image class="icon-info" src="../../images/coupon.png"></image>
+      <image class="icon-info" src="../../images/coupon_member.png"></image>
       <text class="my-balance">我的礼券</text>
     </view>
   </view>
