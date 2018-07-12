@@ -31,7 +31,7 @@
       <text>全民砍价</text>
       <image src="../../images/right_arrow_circle.png" class="icon-right"></image>
     </view>
-    <view class="bargain-item" wx:for="{{bargainList}}">
+    <view class="bargain-item" wx:for="{{bargainList}}" wx:key="*this">
       <image class="bargain-img" src="{{item.img}}"></image>
       <view class="bargain-info">
         <view class="info-header">
@@ -55,5 +55,24 @@
 
       </view>
     </view>
+  </view>
+  <!--精选专题-->
+  <view class="special-topic-wrapper">
+    <view class="topic-header">
+      <text>精选专题</text>
+      <image class="icon-right" src="../../images/right_arrow_circle.png"></image>
+    </view>
+    <movable-area>
+      <movable-view direction="horizontal" out-of-bounds inertia>
+        <view class="topic-item" wx:for="{{topicList}}" wx:key="*this">
+          <image class="topic-img" src="{{item.img}}"></image>
+          <view class="topic-item-info">
+            <text class="topic-item-title">{{item.title}}</text>
+            <text class="topic-item-price">￥{{item.price}}</text>
+          </view>
+          <text class="topic-item-sub-title">{{item.subTitle}}</text>
+        </view>
+      </movable-view>
+    </movable-area>
   </view>
 </view>

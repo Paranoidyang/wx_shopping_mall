@@ -6,6 +6,8 @@
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
+  font-size: 13px;
+  color: #515151;
 } 
 /*设置全局背景色  */
 page {

@@ -40,6 +40,27 @@ Page({
         originalPrice: "48888",
         limit: "18"
       }
+    ],
+    topicList: [
+      {
+        img: "//img20.360buyimg.com/mobilecms/s700x256_jfs/t7393/171/765889073/61915/936cc270/5996e7eaNa22d72b4.jpg!q90!cc_350x128.webp",
+        title: "智能家具",
+        subTitle: "带给你不一样的体验",
+        price: "6879"
+      },
+      {
+        img: "//img11.360buyimg.com/mobilecms/s700x256_jfs/t20539/229/82605291/66559/df347eb5/5af96a18N9451b1a1.jpg!q90!cc_350x128.webp",
+        title: "美食佳肴",
+        subTitle: "舌尖上的非凡感觉",
+        price: "388"
+      },
+      {
+        img: "//img20.360buyimg.com/mobilecms/s700x256_jfs/t7393/171/765889073/61915/936cc270/5996e7eaNa22d72b4.jpg!q90!cc_350x128.webp",
+        title: "智能家具",
+        subTitle: "带给你不一样的体验",
+        price: "6879"
+      }
     ]
+
   }
 })
