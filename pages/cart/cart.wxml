@@ -1,7 +1,7 @@
 <!--pages/cart/cart.wxml-->
 <!--模拟标题栏-->
 <view class="navigation">
-    <text class="nav-title">购物车</text>
+  <text class="nav-title">购物车</text>
 </view>
 <!--购物车为空-->
 <view class="cart-blank-wrapper" wx:if="isBlank">

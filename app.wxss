@@ -8,12 +8,14 @@
   box-sizing: border-box;
   font-size: 13px;
   color: #515151;
-} 
+}
+
 /*设置全局背景色  */
 page {
-   background: #f8f8f8;
+  background: #f8f8f8;
 }
+
 /*去掉button默认样式  */
-button::after{ 
-  border: none; 
+button::after {
+  border: none;
 }
