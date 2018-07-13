@@ -1,2 +1,37 @@
 <!--pages/cart/cart.wxml-->
-<view>购物车</view>
+<!--模拟标题栏-->
+<view class="navigation">
+    <text class="nav-title">购物车</text>
+</view>
+<!--购物车为空-->
+<view class="cart-blank-wrapper" wx:if="isBlank">
+  <!--空页面-->
+  <view class="blank-wrapper">
+    <view class="black-content">
+      <image class="icon-cart" src="../../images/cart_black.png"></image>
+      <text>去添加点什么吧~</text>
+    </view>
+  </view>
+  <!--猜你喜欢-->
+  <view class="guess-you-like-wrapper">
+    <!--头部-->
+    <view class="guess-you-like-header">
+      <text>猜你喜欢</text>
+      <image class="icon-right" src="../../images/right_arrow_circle.png"></image>
+    </view>
+    <!--猜你喜欢的商品列表-->
+    <view class="guess-you-like-list">
+      <view class="guess-goods-item" wx:for="{{guessList}}" wx:key="{{item.id}}">
+        <image class="guess-img" src="{{item.img}}"></image>
+        <text class="guess-title">{{item.title}}</text>
+        <view class="price-wrapper">
+          <text class="price">￥{{item.price}}</text>
+          <text class="sold">已售{{item.sold}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!--商品列表-->
+<view class="goods-list" wx:else></view>
+

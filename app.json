@@ -1,9 +1,9 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/cart/cart",
     "pages/category/category",
-    "pages/member/member",
-    "pages/cart/cart"
+    "pages/index/index",
+    "pages/member/member"
   ],
   "window": {
     "backgroundTextStyle": "light",

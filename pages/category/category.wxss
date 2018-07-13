@@ -2,7 +2,7 @@
 .search-wrapper {
   position: fixed;
   width: 100%;
-  height: 160rpx;
+  height: 150rpx;
   display: flex;
   border-bottom: 1rpx solid #eee;
   background: #fff;
@@ -13,7 +13,7 @@
   height: 70rpx; 
   border-radius: 18px;
   background: #f8f8f8;
-  margin-top: 65rpx;
+  margin-top: 26px;
   margin-left: 30rpx;
   padding: 0 20rpx 0 60rpx;
   font-size: 13px;
@@ -21,7 +21,7 @@
 .icon-search {
   position: absolute;
   left: 35rpx;
-  top: 75rpx;
+  top: 31px;
   width: 50rpx;
   height: 50rpx;
 }

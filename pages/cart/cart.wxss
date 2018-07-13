@@ -1,1 +1,108 @@
 /* pages/cart/cart.wxss */
+page {
+  height: 100%;
+}
+
+.navigation {
+  text-align: center;
+  color: #515151;
+  font-size: 16px;
+  border-bottom: 1rpx solid #f8f8f8;
+  height: 80rpx;
+  padding-top: 30px;
+  background: #fff;
+}
+
+.blank-wrapper {
+  height: 420rpx;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  color: #999999;
+}
+
+.black-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50rpx;
+}
+
+.icon-cart {
+  width: 200rpx;
+  height: 180rpx;
+  margin-bottom: 20rpx;
+}
+
+.guess-you-like-wrapper {
+  font-size: 13px;
+  color: #515151;
+  background: #fff;
+  height: 100%;
+}
+
+.guess-you-like-header {
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-right {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 10rpx;
+}
+
+.guess-you-like-list {
+  width: 100%;
+  display: flex;
+  padding-left: 20rpx;
+  /*强制换行*/
+  flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-bottom: 30rpx;
+}
+
+.guess-goods-item {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border-right: 20rpx solid #fff;
+  border-bottom: 30rpx solid #fff;
+  box-sizing: border-box;
+}
+
+.guess-img {
+  width: 100%;
+  height: 320rpx;
+  margin-bottom: 10rpx;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/*单行超出显示省略号*/
+.guess-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 10rpx;
+  padding: 0 10rpx;
+}
+
+.price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10rpx;
+}
+
+.price {
+  color: #ed4040;
+}
+
+.sold {
+  color: #999999;
+  font-size: 12px;
+}
