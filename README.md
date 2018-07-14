@@ -10,7 +10,7 @@
 
 #### 分类：
 
-<img src="https://github.com/Paranoidyang/wx_shopping_mall/blob/master/screenshots/catgory.jpg" width="40%" height="40%">
+<img src="https://github.com/Paranoidyang/wx_shopping_mall/blob/master/screenshots/cateory.jpg" width="40%" height="40%">
 
 #### 购物车：
 
