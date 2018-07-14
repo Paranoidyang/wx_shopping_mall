@@ -93,12 +93,16 @@
   margin-bottom: 10rpx;
 }
 .btn-add {
-  width: 150rpx;
+  width: 170rpx;
   height: 50rpx;
   font-size: 10px;
   line-height: 50rpx;
   margin-bottom: 15rpx;
   border: 1rpx solid #ed4040;
   color: #ed4040;
-  background: #fff; 
+  background: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 0 10px;
 }

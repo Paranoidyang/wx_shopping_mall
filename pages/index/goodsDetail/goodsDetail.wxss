@@ -82,6 +82,8 @@
 }
 .address-detail {
   margin-top: 30rpx;
+  display:flex;
+  align-items:center;
 }
 .icon-address {
   width: 35rpx;

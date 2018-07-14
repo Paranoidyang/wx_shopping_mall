@@ -21,7 +21,7 @@
         <text class="title">{{item.title}}</text>
         <view class="price-wrapper">
           <text class="price">￥<text class="money">{{item.price}}</text></text>
-          <button class="btn-add">加入</button>
+          <button class="btn-add">加入购物车</button>
         </view>
       </view>
     </view>
