@@ -18,7 +18,7 @@
 
 #### 个人中心：
 
-<img src="https://github.com/Paranoidyang/wx_shopping_mall/blob/master/screenshots/member.jpg" width="40%" height="40%">
+<img src="https://github.com/Paranoidyang/wx_shopping_mall/blob/master/screenshots/member.png" width="40%" height="40%">
 
 
 
