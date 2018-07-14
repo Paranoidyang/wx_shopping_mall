@@ -8,14 +8,24 @@
   box-sizing: border-box;
   font-size: 13px;
   color: #515151;
+  overflow: hidden;
 }
 
 /*设置全局背景色  */
 page {
+  max-width: 100%;
   background: #f8f8f8;
 }
 
 /*去掉button默认样式  */
 button::after {
   border: none;
+}
+button {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  font-size: 13px;
+  color: #515151;
+  background: #fff;
 }

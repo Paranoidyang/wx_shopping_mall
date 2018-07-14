@@ -29,10 +29,7 @@
   display: flex;
   padding-top: 160rpx;
 }
-.sidebar,
-.result-wrapper {
-  overflow: scroll;  
-}
+
 .category-item {
   width: 200rpx;
   height: 90rpx;

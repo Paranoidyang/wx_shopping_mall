@@ -8,8 +8,10 @@
 <!--分类tab切换  -->
 <view class="category-wrapper">
   <!--分类  -->
-  <view class="sidebar">
-    <view class="category-item {{select == index ? 'active': ''}}" hover-class="hover" wx:for="{{categories}}" wx:key="{{item.id}}" id="{{item.id}}" bindtap='categoryClick'>{{item.name}}</view>
+  <view class="sidebar-wrapper">
+    <view class="sidebar">
+      <view class="category-item {{select == index ? 'active': ''}}" hover-class="hover" wx:for="{{categories}}" wx:key="{{item.id}}" id="{{item.id}}" bindtap='categoryClick'>{{item.name}}</view>
+    </view>
   </view>
   <!--结果列表  -->
   <view class="result-wrapper">

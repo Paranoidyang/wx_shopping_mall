@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/cart/cart",
-    "pages/category/category",
     "pages/index/index",
+    "pages/index/goodsDetail/goodsDetail",
+    "pages/category/category",
+    "pages/cart/cart",
     "pages/member/member"
   ],
   "window": {
@@ -10,7 +11,8 @@
     "navigationBarBackgroundColor": "#FA5523",
     "navigationBarTitleText": "仆累商城",
     "navigationBarTextStyle": "white",
-    "navigationStyle": "custom"
+    "navigationStyle": "custom",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "selectedColor": "#ed3f14",

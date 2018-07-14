@@ -1,0 +1,101 @@
+<view class="container">
+  <!--轮播图-->
+  <swiper class="swiper-wrapper" autoplay="true" circular="true" indicator-dots="true" indicator-color="#fff" indicator-active-color="#FFA042">
+    <swiper-item class="swiper-item" wx:for="{{slides}}" wx:key="*this">
+      <image class="slider-image" src="{{item}}" mode="widthFix"></image>
+    </swiper-item>
+  </swiper>
+  <!--商品信息-->
+  <view class="goods-info">
+    <text class="title">大型游戏显示屏大型游戏显示（暑你会玩）</text>
+    <text class="sub-title">让你的暑假无懈可击</text>
+    <view class="price-wrapper">
+      <text class="price">￥6999<text class="original-price">￥7889</text></text>
+      <text class="sold">已售249</text>
+    </view>
+  </view>
+  <!--选择规格-->
+  <view class="select-size">
+    <text>选择规格：选择版本</text>
+    <image class="right_arrow" src="../../../images/right_arrow.png"></image>
+  </view>
+  <!--配送地址-->
+  <view class="address">
+    <text>配送至</text>
+    <view class="address-detail">
+      <text>深圳市南山区大冲华润置地大厦</text>
+      <image class="icon-address" src="../../../images/address_small.png"></image>
+    </view>
+  </view>
+  <!--服务信息-->
+  <view class="service-info">
+    <view class="service-item">
+      <image src="../../../images/check_circle.png"></image>
+      <text>7天可退</text>
+    </view>
+    <view class="service-item">
+      <image src="../../../images/check_circle.png"></image>
+      <text>退货返运费</text>
+    </view>
+    <view class="service-item">
+      <image src="../../../images/check_circle.png"></image>
+      <text>7天可换</text>
+    </view>
+    <view class="service-item">
+      <image src="../../../images/check_circle.png"></image>
+      <text>京东发货</text>
+    </view>
+  </view>
+  <!--tab导航-->
+  <view class="tab-wrapper">
+    <view class="tab-item" id="{{item.id}}" bindtap="selectTab" wx:for="{{tabs}}" wx:key="id">
+      <image src="{{select == item.id ? '../../../images/address_small_red.png' : ''}}"></image>
+      <text style="color:{{select == item.id ? '#ed4040' : ''}};">{{item.name}}</text>
+    </view>
+  </view>
+
+  <!--口碑精选-->
+  <view class="comment-wrapper">
+    <view class="comment-header">
+      <text>口碑精选</text>
+      <text class="look-all">查看全部</text>
+    </view>
+    <!--滚动部分-->
+    <view class="scroll-wrapper">
+      <scroll-view scroll-x>
+        <view class="comment-item" wx:for="{{commentList}}" wx:key="id">
+          <view class="user-info">
+            <image class="avatar" src="{{item.avatar}}"></image>
+            <text class="nickname">{{item.nickname}}</text>
+          </view>
+          <text class="comment">{{item.comment}}</text>
+        </view>
+        <!--查看更多-->
+        <!--<view class="look-more-item">-->
+          <!--<view>-->
+            <!--<text class="font-more-chinese">查看更多</text>-->
+            <!--<text class="font-more-english">more</text>-->
+          <!--</view>-->
+        <!--</view>-->
+      </scroll-view>
+    </view>
+  </view>
+  <!--到底提示-->
+  <view class="bottom-tip">
+    <text>到底了，再往上逛逛吧~</text>
+  </view>
+  <!--底部操作（购买、加入购物车、收藏等）-->
+  <view class="handle-wrapper">
+    <view class="btn-icon">
+      <image src="../../../images/customer_service.png"></image>
+    </view>
+    <view class="btn-icon">
+      <image src="../../../images/cart.png"></image>
+    </view>
+    <view class="btn-icon">
+      <image src="../../../images/collect.png"></image>
+    </view>
+    <button class="btn-buy">立即购买</button>
+    <button class="btn-add">加入购物车</button>
+  </view>
+</view>

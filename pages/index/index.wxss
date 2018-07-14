@@ -113,16 +113,21 @@
 .limit {
   color: #999;
 }
-movable-view {
-  display: flex;
-  width: 1130rpx;
-  height: 430rpx;
+.scroll-wrapper {
+  width: 100%;
+  white-space: nowrap;
+  overflow:hidden;
   background: #fff;
 }
 .topic-item {
+  display: inline-block;
   width: 600rpx;
   padding-left: 20rpx;
   background: #fff;
+  padding-bottom: 30rpx;
+}
+.topic-item:last-child {
+  margin-right: 20rpx;
 }
 .topic-img {
   width: 600rpx;
@@ -148,5 +153,15 @@ movable-view {
   font-size: 12px;
   color: #999999;
   padding-left: 20rpx;
+}
+
+/*到底提示*/
+.bottom-tip {
+  height: 120rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #707070;
+  font-size: 12px;
 }
 
