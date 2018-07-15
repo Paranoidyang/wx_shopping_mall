@@ -1,6 +1,26 @@
 .container {
   padding-bottom: 100rpx;
 }
+
+/*返回按钮*/
+.go-back-wrapper {
+  position: fixed;
+  z-index: 1;
+  top: 28px;
+  left: 30rpx;
+  width: 60rpx;
+  height: 60rpx;
+  border: 1rpx solid #fff;
+  padding: 10rpx;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.icon-go-back {
+  width: 60rpx;
+  height: 60rpx;
+}
+
 /*轮播图*/
 .swiper-wrapper {
   width: 100%;

@@ -1,4 +1,8 @@
 <view class="container">
+  <!--返回按钮-->
+  <view class="go-back-wrapper" bindtap="goBack">
+    <image class="icon-go-back" src="../../../images/go_back.png"></image>
+  </view>
   <!--轮播图-->
   <swiper class="swiper-wrapper" autoplay="true" circular="true" indicator-dots="true" indicator-color="#fff" indicator-active-color="#FFA042">
     <swiper-item class="swiper-item" wx:for="{{slides}}" wx:key="*this">

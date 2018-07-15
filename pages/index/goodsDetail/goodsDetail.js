@@ -47,6 +47,12 @@ Page({
       }
     ]
   },
+  /*返回上一页*/
+  goBack: function() {
+    console.log('哈哈')
+    wx.navigateBack()
+  },
+  /*点击tab切换*/
   selectTab: function (event) {
     this.setData({
       select: event.currentTarget.id
