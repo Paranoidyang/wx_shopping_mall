@@ -1,4 +1,8 @@
 <!--pages/collect/collect.wxml-->
+
+<!--点击加入购物车时，动态生成商品图片，用以动画效果-->
+<!--<image wx:if="{{showImage}}" src="{{imageUrl}}" style="{{imageStyle}}"></image>-->
+
 <!--搜索栏 -->
 <view class="search-wrapper">
   <input class="search-input" type="text" placeholder='请输入搜索关键词'> </input>
@@ -9,19 +13,17 @@
 <view class="category-wrapper">
   <!--分类  -->
   <view class="sidebar-wrapper">
-    <view class="sidebar">
-      <view class="category-item {{select == index ? 'active': ''}}" hover-class="hover" wx:for="{{categories}}" wx:key="{{item.id}}" id="{{item.id}}" bindtap='categoryClick'>{{item.name}}</view>
-    </view>
+    <view class="category-item {{select == index ? 'active': ''}}" hover-class="hover" wx:for="{{categories}}" wx:key="{{item.id}}" id="{{item.id}}" bindtap='categoryClick'>{{item.name}}</view>
   </view>
   <!--结果列表  -->
   <view class="result-wrapper">
     <view class="goods-item" wx:for="{{goodsList}}" wx:key="{{item.id}}">
-      <image class="goods-image" src="{{item.image}}"> </image>
+      <image class="goods-image" src="{{item.image}}" id="goods-image-{{item.id}}"></image>
       <view class="goods-info">
         <text class="title">{{item.title}}</text>
         <view class="price-wrapper">
           <text class="price">￥<text class="money">{{item.price}}</text></text>
-          <button class="btn-add">加入购物车</button>
+          <button class="btn-add" id="{{item.image}},{{item.id}}" bindtap="addToCart">加入购物车</button>
         </view>
       </view>
     </view>

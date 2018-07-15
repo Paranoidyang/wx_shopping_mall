@@ -29,3 +29,22 @@ button {
   color: #515151;
   background: #fff;
 }
+
+/*下落动画*/
+/*@-webkit-keyframes drop {*/
+  /*0% {*/
+    /*width: 60px;*/
+    /*height: 60px;*/
+  /*}*/
+  /*100% {*/
+    /*width: 1.15rem;*/
+    /*height: 1.15rem;*/
+    /*left: 200px;*/
+    /*top: 700px;*/
+    /*border-radius: 50%;*/
+    /*-webkit-transform: rotate(180deg);*/
+    /*-moz-transform: rotate(180deg);*/
+    /*-o-transform: rotate(180deg);*/
+    /*-ms-transform: rotate(180deg);*/
+  /*}*/
+/*}*/
