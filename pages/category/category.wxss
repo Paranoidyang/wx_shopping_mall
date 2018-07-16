@@ -5,7 +5,7 @@
   width: 100%;
   height: 150rpx;
   display: flex;
-  border-bottom: 1rpx solid #eee;
+  border-bottom: 2rpx solid #eee;
   background: #fff;
   z-index: 2;
 }
@@ -63,7 +63,7 @@
   display: flex;
   align-items: center;
   height: 180rpx;
-  border-bottom: 1rpx solid #eee; 
+  border-bottom: 2rpx solid #eee;
 }
 .goods-item:last-child {
   border-bottom: none;

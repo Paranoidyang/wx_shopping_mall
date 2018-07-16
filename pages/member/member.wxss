@@ -40,7 +40,7 @@
   display: flex;
   align-items: center;
   height: 100rpx;
-  border-bottom: 1rpx solid #f8f8f8;
+  border-bottom: 2rpx solid #f8f8f8;
   color: #515151;
   padding: 0 20rpx;
   background: #fff;
@@ -91,8 +91,8 @@
   align-items: center;
   height: 160rpx;
   padding: 40rpx 0 30rpx 0;
-  border-right: 1rpx solid #f8f8f8;
-  border-bottom: 1rpx solid #f8f8f8;
+  border-right: 2rpx solid #f8f8f8;
+  border-bottom: 2rpx solid #f8f8f8;
 }
 .money {
   font-size: 10px;

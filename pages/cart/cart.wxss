@@ -9,7 +9,7 @@ page {
   text-align: center;
   color: #515151;
   font-size: 16px;
-  border-bottom: 1rpx solid #f8f8f8;
+  border-bottom: 2rpx solid #f8f8f8;
   height: 80rpx;
   padding-top: 30px;
   background: #fff;

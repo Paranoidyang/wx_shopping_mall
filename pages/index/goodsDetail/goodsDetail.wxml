@@ -57,7 +57,6 @@
       <text style="color:{{select == item.id ? '#ed4040' : ''}};">{{item.name}}</text>
     </view>
   </view>
-
   <!--口碑精选-->
   <view class="comment-wrapper">
     <view class="comment-header">
@@ -82,6 +81,36 @@
           <!--</view>-->
         <!--</view>-->
       </scroll-view>
+    </view>
+  </view>
+  <!--推荐-->
+  <view class="recommend-wrapper">
+    <view class="recommend-header">热门推荐</view>
+    <view class="recommend-list">
+      <view class="recommend-goods-item" wx:for="{{recommendList}}" wx:key="id">
+        <image class="goods-img" src="{{item.img}}"></image>
+        <text class="title">{{item.title}}</text>
+        <text class="price">￥{{item.price}}<text class="original-price">￥{{item.originalPrice}}</text></text>
+      </view>
+    </view>
+  </view>
+  <!--详情（介绍与售后tab切换）-->
+  <view class="detail-wrapper">
+    <view class="detail-tab-header">
+      <view class="detail-tab-item" id="{{item.id}}" bindtap="selectDetailTab" wx:for="{{detailTabs}}" wx:key="id">
+        <text style="color:{{detailSelect == item.id ? '#ed4040' : ''}};border-bottom:{{detailSelect == item.id ? '2px solid #ed4040' : ''}};">{{item.name}}</text>
+      </view>
+    </view>
+    <view class="introduce-content" wx:if="{{detailSelect == 1 ? true : false}}">
+      <view class="introduce">
+        介绍
+      </view>
+      <view class="graphic-detail">
+        图文详情
+      </view>
+    </view>
+    <view class="consult-and-after-sales" wx:else>
+      咨询与售后
     </view>
   </view>
   <!--到底提示-->
