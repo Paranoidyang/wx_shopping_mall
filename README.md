@@ -4,7 +4,7 @@
 ### 界面
 这几天就捣鼓了一个商城小程序（copy了好几个商城的UI），利用原生组件写了几个页面，也碰到了一些痛点，算是为新工作热热身吧。几个简单的界面如下：
 
-首页：
+
 <img src="https://github.com/Paranoidyang/wx_shopping_mall/blob/master/screenshots/home.jpg" width="40%" height="40%">
 
 商品详情页：
