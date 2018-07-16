@@ -3,6 +3,7 @@
 之前公司一直都用vue做项目，最近换了一家做小程序的，便利用这几天好好恶补了一下，发现小程序与vue真是极其相似，都是数据驱动、组件化开发，也定义了一下类似v-if、v-for之类的指令，感觉做过vue的简直可以无缝切换到小程序开发（文末有github地址）。
 ### 界面
 这几天就捣鼓了一个商城小程序（copy了好几个商城的UI），利用原生组件写了几个页面，也碰到了一些痛点，算是为新工作热热身吧。几个简单的界面如下：
+
 首页：
 <img src="https://github.com/Paranoidyang/wx_shopping_mall/blob/master/screenshots/home.jpg" width="40%" height="40%">
 
