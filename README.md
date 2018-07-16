@@ -7,21 +7,27 @@
 
 <img src="https://github.com/Paranoidyang/wx_shopping_mall/blob/master/screenshots/home.jpg" width="40%" height="40%">
 
+
 商品详情页：
 
 <img src="https://github.com/Paranoidyang/wx_shopping_mall/blob/master/screenshots/goods_detail.jpg" width="40%" height="40%">
+
 
 分类：
 
 <img src="https://github.com/Paranoidyang/wx_shopping_mall/blob/master/screenshots/category.jpg" width="40%" height="40%">
 
+
 购物车：
 
 <img src="https://github.com/Paranoidyang/wx_shopping_mall/blob/master/screenshots/cart.jpg" width="40%" height="40%">
 
+
 个人中心：
 
 <img src="https://github.com/Paranoidyang/wx_shopping_mall/blob/master/screenshots/member.png" width="40%" height="40%">
+
+
 ### 痛点
 原生的方式不能用sass。因为用vue习惯了用sass写样式，但小程序不能直接使用sass等预处理器，不过好像用了mpvue、wepy等框架可以实现用css预处理器（还未尝试过，试过了再更新）。
 去掉标题栏必须全局统一去掉。本来以为在页面的json文件里可以覆盖，结果发现并不起作用，所以统一去掉之后，如果你在某些页面又需要标题栏只能自己用view模拟一个（如我这里的商品详情页），希望以后官方可以人性化一点。
